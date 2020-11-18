@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+                <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">
+	<script src="https://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+	<script src="https://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
+	<script src="https://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
+     <script src="script.js?5" type="text/javascript"></script>
+         <style>
+        #price{
+            position:fixed;
+            top:0px;
+            z-index:300;
+        }
+        img#organic_icon{
+            position:absolute;
+            z-index:299;
+            top:250px;
+            left:120px;
+            width:90px;
+        }
+    </style>
+    </head>
+    <body onload="animate_beverage();">
+        
+<div id="container">
+    <img id="organic_icon" src="organic_icon.png" alt=""/>
+    <div id="smoke-container">
+      <svg width="80px" height="73px" viewbox="0 0 31 73">
+        <g class="smokes" transform="translate(2.000000, 2.000000)" stroke="#BEBEBE" stroke-width="5">
+          <g class="smoke-1">
+            <path id="Shape1" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+          </g>
+          <g class="smoke-2">
+            <path id="Shape2" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+          </g>
+          <g class="smoke-3">
+            <path id="Shape3" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+          </g>
+        </g>
+      </svg>
+  </div>
+  
+  <div id="beaker"> 
+    
+    <div id="liquid">
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+      <div class="bubble bubble4"></div>
+      <div class="bubble bubble5"></div>
+    </div>
+  </div>
+    
+</div>
+        <button id="price" class="ui-btn  ui-btn-icon-left ui-shadow-icon ui-btn-b">10 AED</button>
+<form>
+    <fieldset data-role="controlgroup">
+        <legend>Choose your beverage:</legend>
+        <input onchange="animate_beverage();" type="radio" name="_" id="coca_cola" value="on" checked="checked">
+        <label for="coca_cola">Coca Cola</label>
+        <input onchange="animate_beverage();" type="radio" name="_" id="fanta" value="off">
+        <label for="fanta">Fanta</label>
+        <input onchange="animate_beverage();" type="radio" name="_" id="apple_juice" value="other">
+        <label for="apple_juice">Apple Juice</label>
+        <input onchange="animate_beverage();" type="radio" name="_" id="coffee" value="other">
+        <label for="coffee">Coffee</label>
+         <input onchange="animate_beverage();" type="radio" name="_" id="lemonede" value="other">
+        <label for="lemonede">Lemonede</label>
+    </fieldset>
+</form>
+    </body>
+</html>
